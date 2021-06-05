@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#31326F"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lvDining"
+        android:layout_width="match_parent"
+        android:layout_height="632dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="64dp"
+        android:layout_alignParentLeft="true" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/textview13"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="#DBF6E9"
+        />
+
+    <TextView
+        android:id="@+id/tvHomeDining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginBottom="1dp"
+        android:fontFamily="@font/baloo"
+        android:text="Home"
+        android:textColor="#31326F"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/ivCountryDining"
+        android:layout_width="60dp"
+        android:layout_height="114dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="181dp"
+        android:layout_marginRight="181dp"
+        android:layout_marginBottom="-6dp"
+        app:srcCompat="@drawable/location"/>
+
+    <TextView
+        android:id="@+id/tvCountryDining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="177dp"
+        android:layout_marginLeft="177dp"
+        android:layout_marginBottom="1dp"
+        android:fontFamily="@font/baloo"
+        android:text="Review"
+        android:textColor="#31326F"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/ivSetting_DiningPage"
+        android:layout_width="56dp"
+        android:layout_height="144dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        android:layout_marginBottom="-23dp"
+        app:srcCompat="@drawable/setting" />
+
+    <TextView
+        android:id="@+id/tvSettingDining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="321dp"
+        android:layout_marginLeft="321dp"
+        android:layout_marginBottom="-1dp"
+        android:fontFamily="@font/baloo"
+        android:text="Setting"
+        android:textColor="#31326F"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/ivHome_DiningPage"
+        android:layout_width="59dp"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="681dp"
+        android:layout_marginBottom="8dp"
+        app:srcCompat="@drawable/home"/>
+
+</RelativeLayout>

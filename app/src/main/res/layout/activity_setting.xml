@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#31326F"
+    android:paddingTop="100dp"
+    tools:context=".SettingActivity">
+
+    <TextView
+        android:id="@+id/tvWelcomeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:text="Welcome Guest"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/btnLogin_SettingPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/btnLogout_SettingPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Logout" />
+
+    <Button
+        android:id="@+id/btnDelete_SettingPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Delete Account" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_gravity="bottom">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:background="#DBF6E9"
+            android:text=""
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/ivHome_SettingPage"
+            android:layout_width="98dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/home" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="70dp"
+            android:textSize="20dp"
+            android:text="Home" />
+
+        <ImageView
+            android:id="@+id/ivReview_SettingPage"
+            android:layout_width="98dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/favourites" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="70dp"
+            android:text="Review"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/ivSetting_SettingPage"
+            android:layout_width="98dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/setting" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="70dp"
+            android:textSize="20dp"
+            android:text="Setting" />
+
+    </FrameLayout>
+</LinearLayout>
