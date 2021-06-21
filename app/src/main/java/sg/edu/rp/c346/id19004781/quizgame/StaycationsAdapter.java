@@ -34,9 +34,9 @@ public class StaycationsAdapter extends ArrayAdapter<Staycations> {
 
         TextView tvSCName = rowView.findViewById(R.id.tvHotelName);
         TextView tvSite = rowView.findViewById(R.id.tvHotelSite);
-        TextView tvRating = rowView.findViewById(R.id.tvRating);
+//        TextView tvRating = rowView.findViewById(R.id.tvRating);
         ImageView ivStaycationsImage = rowView.findViewById(R.id.ivSC);
-        ImageView ivStars = rowView.findViewById(R.id.star);
+//        ImageView ivStars = rowView.findViewById(R.id.star);
 
         ivStaycationsImage.setImageResource(getItem(position).getHotelImage());
 //        tvSite.setText(getItem(position).getHotelSite());

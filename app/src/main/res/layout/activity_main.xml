@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,221 +8,150 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <SearchView
-        android:layout_width="36dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="41dp"
-        android:layout_marginLeft="41dp"
-        android:layout_marginTop="40dp" />
 
-    <TextView
-        android:id="@+id/tvSearch"
-        android:layout_width="280dp"
-        android:layout_height="60dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="109dp"
-        android:background="@drawable/searchborder"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="109dp" />
 
-    <TextView
-        android:id="@+id/tvRectangle"
+<!--    <TextView-->
+<!--        android:id="@+id/tvSearch"-->
+<!--        android:layout_width="280dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_marginTop="34dp"-->
+<!--        android:layout_marginEnd="109dp"-->
+<!--        android:layout_marginRight="109dp"-->
+<!--        android:background="@drawable/searchborder" />-->
+
+    <!-- A CardView that contains a TextView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
         android:layout_width="380dp"
         android:layout_height="500dp"
-        android:background="@drawable/rectangle"
-        android:layout_centerInParent="true" />
+        android:layout_marginTop="55dp"
+        app:cardCornerRadius="25dp">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="111dp"
-        android:layout_marginLeft="111dp"
-        android:layout_marginTop="53dp"
-        android:text="Search by Country"
-        android:textColor="#9DDFD3" />
+        <ImageView
+            android:id="@+id/ivAttractionImage"
+            android:layout_width="137dp"
+            android:layout_height="180dp"
+            android:src="@drawable/attraction1"/>
 
-    <ImageView
-        android:id="@+id/ivAttraction"
-        android:layout_width="137dp"
-        android:layout_height="180dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="113dp"
-        app:srcCompat="@drawable/attraction1" />
+        <TextView
+            android:id="@+id/tvAttraction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:text="Attractions"
+            android:textColor="#31326F"
+            android:textSize="34sp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="60dp"/>
 
-    <TextView
-        android:id="@+id/tvAttraction"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="183dp"
-        android:layout_marginEnd="47dp"
-        android:layout_marginRight="47dp"
-        android:fontFamily="@font/baloo"
-        android:text="Attractions"
-        android:textColor="#31326F"
-        android:textSize="34sp" />
+        <ImageView
+            android:id="@+id/ivFood"
+            android:layout_width="124dp"
+            android:layout_height="282dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/food" />
 
-    <ImageView
-        android:id="@+id/ivFood"
-        android:layout_width="124dp"
-        android:layout_height="282dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="22dp"
-        android:layout_marginBottom="224dp"
-        app:srcCompat="@drawable/food"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="22dp" />
+        <TextView
+            android:id="@+id/tvFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="210dp"
+            android:fontFamily="@font/baloo"
+            android:text="Food &amp; Dining"
+            android:textColor="#31326F"
+            android:textSize="34sp" />
 
-    <TextView
-        android:id="@+id/tvFood"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:layout_marginEnd="37dp"
-        android:layout_marginRight="37dp"
-        android:fontFamily="@font/baloo"
-        android:text="Food &amp; Dining"
-        android:textColor="#31326F"
-        android:textSize="34sp" />
+        <ImageView
+            android:id="@+id/ivStaycation"
+            android:layout_width="181dp"
+            android:layout_height="147dp"
+            android:layout_marginTop="350dp"
+            android:src="@drawable/staycation" />
 
-    <ImageView
-        android:id="@+id/ivStaycation"
-        android:layout_width="181dp"
-        android:layout_height="147dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="7dp"
-        android:layout_marginTop="455dp"
-        app:srcCompat="@drawable/staycation"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="7dp" />
+        <TextView
+            android:id="@+id/tvStaycation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:text="Staycations"
+            android:textColor="#31326F"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="410dp"
+            android:textSize="34sp" />
 
-    <TextView
-        android:id="@+id/tvStaycation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="52dp"
-        android:layout_marginRight="52dp"
-        android:layout_marginBottom="156dp"
-        android:fontFamily="@font/baloo"
-        android:text="Staycations"
-        android:textColor="#31326F"
-        android:textSize="34sp" />
 
-    <TextView
-        android:id="@+id/textView12"
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="87dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:background="#DBF6E9"
-        android:layout_alignParentLeft="true" />
+        android:layout_gravity="bottom"
+        app:cardBackgroundColor="#DBF6E9"
+        android:layout_marginTop="20dp">
 
-    <ImageView
-        android:id="@+id/ivHome"
-        android:layout_width="70dp"
-        android:layout_height="56dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="23dp"
-        android:layout_marginLeft="23dp"
-        android:layout_marginTop="639dp"
-        app:srcCompat="@drawable/home" />
+        <ImageView
+            android:id="@+id/ivHome"
+            android:layout_width="70dp"
+            android:layout_height="56dp"
+            android:layout_gravity="left|top"
+            android:src="@drawable/home" />
 
-    <TextView
-        android:id="@+id/tvHomeAttraction"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="37dp"
-        android:layout_marginLeft="37dp"
-        android:layout_marginBottom="1dp"
-        android:fontFamily="@font/baloo"
-        android:text="Home"
-        android:textColor="#31326F"
-        android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tvHomeAttraction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:text="Home"
+            android:textColor="#31326F"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="bottom"
+            android:textSize="20dp" />
 
-    <ImageView
-        android:id="@+id/ivFavourites_HomePage"
-        android:layout_width="60dp"
-        android:layout_height="114dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginEnd="181dp"
-        android:layout_marginRight="181dp"
-        android:layout_marginBottom="-6dp"
-        app:srcCompat="@drawable/favourites" />
+        <ImageView
+            android:id="@+id/ivFavourites_HomePage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center|top"
+            android:src="@drawable/favourites" />
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="177dp"
-        android:layout_marginLeft="177dp"
-        android:layout_marginBottom="1dp"
-        android:fontFamily="@font/baloo"
-        android:text="Review"
-        android:textColor="#31326F"
-        android:textSize="14sp" />
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:text="Review"
+            android:textColor="#31326F"
+            android:layout_gravity="center|bottom"
+            android:textSize="20dp" />
 
-    <ImageView
-        android:id="@+id/ivSetting_HomePage"
-        android:layout_width="56dp"
-        android:layout_height="144dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="41dp"
-        android:layout_marginRight="41dp"
-        android:layout_marginBottom="-23dp"
-        app:srcCompat="@drawable/setting" />
+        <ImageView
+            android:id="@+id/ivSetting_HomePage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="right|top"
+            android:src="@drawable/setting" />
 
-    <TextView
-        android:id="@+id/tvSettingAttraction"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="321dp"
-        android:layout_marginLeft="321dp"
-        android:layout_marginBottom="-1dp"
-        android:fontFamily="@font/baloo"
-        android:text="Setting"
-        android:textColor="#31326F"
-        android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tvSettingAttraction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:fontFamily="@font/baloo"
+            android:text="Setting"
+            android:textColor="#31326F"
+            android:textSize="20dp" />
+    </androidx.cardview.widget.CardView>
 
-</RelativeLayout>
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView4"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:text="Search by Country"-->
+<!--        android:textColor="#9DDFD3" />-->
+
+
+</LinearLayout>

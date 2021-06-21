@@ -80,6 +80,7 @@ public class EditReview extends AppCompatActivity {
             public void onClick(View v) {
                 DBHelper dbh = new DBHelper(EditReview.this);
                 dbh.deleteReview(data.getId());
+                Toast.makeText(EditReview.this, "Delete successfully", Toast.LENGTH_SHORT).show();
                 dbh.close();
             }
         });
